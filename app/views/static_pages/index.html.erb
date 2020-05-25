@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<head>
+<title>Vigilant Development</title>
+<meta name="description" content="mcv is a professional full-stack developer.
+He has experience with Ruby, Rails, JavaScript,
+and building web applications.">
+</head>
+
+<body>
+<!-- Begin HERO -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Developing Vigilantly</h1>
+      <p>subtitle</p>
+      <button>clicky</button>
+    </div>
+  </div>
+
+<!-- Begin TABS -->
+  <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="portfolio-tab" data-toggle="tab" href="#portfolio" role="tab" aria-controls="portfolio" aria-selected="false">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
+
+  <div class="tab-content tabview" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+      <!-- About Section -->
+        <div class="about">
+            <%=image_tag("lou.jpg", class:"lou") %>
+            <h1>mcv</h1>
+            <h2>WEBDEV</h2>
+            <hr class="hrline" />
+            <p class="bio">
+              &emsp;- Static Websites<br>
+              &emsp;- Web-based Applications<br>
+              &emsp;- Web Host Management<br>
+              &emsp;- SSL Cert Administration<br>
+              &emsp;- Website Analytics
+            </p>
+            <br>
+        </div>
+    </div>
+    <!-- Portfolio Section-->
+    <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
+      <div class="portfolio-section">
+        
+        <h3>Static Webpages:</h3>
+        <hr class="yellow" >
+        <br>
+        <h3>Web Applications:</h3>
+        <hr class="yellow" >
+        <div class="box">
+          <h4>Quote Generator</h4>
+          <img src="splurty.png" class="full-width" />
+          <p>
+            A database-powered quote generator with a mobile-first
+            design, using the Ruby on Rails framework, HTML, and CSS.
+            Uses Git and GitHub for version control, and launched
+            on Heroku.
+          </p>
+        </div>
+        <div class="box">
+          <h4>Yelp Clone</h4>
+          <img src="nomster.png" class="full-width" />
+          <p>
+            A Yelp clone that integrates with the Google Maps API
+            and includes features like user comments, star ratings,
+            image uploading, and user authentication.
+          </p>
+        </div>
+        <br class="clear" />
+    
+        <div class="box">
+          <h4>Two-Sided Market Place</h4>
+          <img src="flixter.png" class="full-width" />
+          <p>
+            A two-sided, video-streaming marketplace platform that
+            features credit card payment capabilities, user role
+            management, complex user interfaces, and advanced
+            database relationships.
+          </p>
+        </div>
+        <div class="box">
+          <h4>Test Driven Development</h4>
+          <img src="grammable.png" class="full-width" />
+          <p>
+            An Instagram clone that was built using industry-standard, test-driven
+            development following numerous red/green/refactor cycles.
+          </p>
+        </div>
+        <br class="clear" />
+        <div class="box">
+          <h4>Single Page Todo Application</h4>
+          <img src="todoster.png" class="full-width" />
+          <p>
+            This single-page to-do application features a
+            fluid user interface that– by using JavaScript–
+            allows users to rapidly add dynamic content.
+          </p>
+        </div>
+        <div class="box">
+          <h4>Agile Team Project</h4>
+          <img src="chess.png" class="full-width" />
+          <p>
+            Worked on an Agile software development team building
+            a chess application. Under the guidance of a senior software engineer,
+            we had weekly Agile team meetings for code reviews, sprint planning,
+            and feature assignments.
+          </p>
+        </div>
+        <br class="clear" />     
+        <br>
+
+        <h3>Code Snippets:</h3>
+        <hr class="yellow" >
+        <div class="box">
+          <h4>Temperature Conversion</h4>
+          <p>
+            This Ruby program will prompt the user for a temperature
+            in degrees Celsius and let the user know what the
+            corresponding temperature is in Fahrenheit.
+          </p>
+        </div>
+        <div class="box">
+          <pre><code class="language-ruby">
+def c2f(c)
+  return c * 1.8 + 32
+end
+puts &quot;Please enter degrees in Celsius&quot;
+c = gets.to_f
+puts &quot;#{c} degrees Celsius = #{c2f(c)} degrees Fahrenheit&quot; 
+          </code></pre>
+        </div>
+        <br class="clear" />
+        <div class="box">
+          <pre><code class="language-ruby">
+puts &quot;Please enter a number.&quot;
+num = gets.to_i
+def ordinal(num)
+  if num == 11 || num == 12 || num == 13
+    return &quot;th&quot;
+  else
+    rt = num % 10
+    if rt == 1
+    return &quot;st&quot;
+    elsif rt == 2
+    return &quot;nd&quot;
+    elsif rt == 3
+    return &quot;rd&quot;
+    else
+    return &quot;th&quot;
+    end
+  end
+end
+puts &quot;That's the #{num}#{ordinal(num)} item!&quot;
+            </code></pre>
+        </div>
+        <div class="box">
+          <h4>Ordinal Challenge</h4>
+          <p>
+            This Ruby program will convert a plain number
+            to the ordinal of the number. So for example,
+            if the user enters 2, it will display 2nd, if
+            the user enters 3, it will display 3rd, etc.
+          </p>
+        </div>
+        <br class="clear" />
+        <div class="box">
+          <h4>Foobar</h4>
+          <p>
+            This Ruby program is an adaptation of a classic technical
+            interview problem which displays sequences
+            of the Foobar pattern.
+          </p>
+        </div>
+        <div class="box">
+          <pre><code class="language-ruby">
+puts &quot;How many digits would you like to see in the pattern?&quot;
+  input_number = gets.to_i
+  list = []
+  number = 0
+def fblogic(number)
+  if (number % 3 == 0) &amp;&amp; (number % 5 == 0)
+    return &quot;foobar&quot;
+  elsif number % 3 == 0
+    return &quot;bar&quot;
+  elsif number % 5 == 0
+    return &quot;foo&quot;
+  else
+    return number
+  end
+end
+while number != input_number
+  number = number + 1
+  fblogic(number)
+  list &lt;&lt; number
+  puts fblogic(number)
+end
+          </code></pre>
+        </div>
+        <br class="clear" />
+
+      </div>
+
+    </div>
+
+<!-- Contact Section-->
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      <div class="contact-me">
+        <h3 class="contact-headline">Contact</h3>
+        <hr class="yellow" />
+        <p class="contact-info">
+          Currently entertaining new opportunities.
+          Please get in touch via email:
+        </p>
+        <p>
+          <a href="mailto:marc@vigilantdev.com" class="contact-link">
+            marc@vigilantdev.com.com
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Begin HERO -->
+  <div class="hero-image">
+  </div>
+</body>

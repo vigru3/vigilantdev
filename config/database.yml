@@ -82,7 +82,8 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: vigilantdev_production
+  url: <%= ENV['DATABASE_URL'] %>
+  #<<: *default
+  #database: vigilantdev_production
   #username: vigilantdev
   #password: <%= ENV['VIGILANTDEV_DATABASE_PASSWORD'] %>
